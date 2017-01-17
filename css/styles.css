@@ -1,0 +1,14 @@
+
+body{
+	background-color: #F2F2F2;
+}
+
+/* Convirtiendo a circular */
+.docircular {
+	width: 300px;
+	height: 300px;
+	background-color: #000000;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+}
