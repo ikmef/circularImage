@@ -2,13 +2,34 @@
 body{
 	background-color: #F2F2F2;
 }
+/* Estilos para la lista */
+.ch-grid-ul {
+	margin: 20px 0 0 0; /*Coloca la lista en el margen superior*/
+	padding: 0;  /*No rellena el area*/
+	list-style: none; /*No pone algun icono o simbolo en la lista*/
+	display: block; /*se muestra como un conjunto en bloque*/
+	text-align: center; /*Alinea el texto en el centro*/
+	width: 100%;
+}
 
-/* Convirtiendo a circular */
-.docircular {
-	width: 300px;
-	height: 300px;
-	background-color: #000000;
-	border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
+/*Investigar*/
+.ch-item-div {
+	width: 50%; /*se ajusta para ocupar el 50% de ancho*/
+	height: 50%; /*se ajusta para ocupar el 50 de altura*/
+	border-radius: 50%; /*redonde el div para que se vea circular*/
+	position: relative; /*le da un margen de 20px por default al div*/
+	cursor: default;/*cambia el cursor segun la posición donde este*/
+	box-shadow: /*coloca una sombra en el elemento */
+		inset 0 0 0 16px rgba(255,255,255,0.6), /*agrega un recuadro 3D dentro del div*/
+		0 1px 2px rgba(0,0,0,0.1); /*agrega la sombra en el recuadro*/ 
+		
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+.ch-img-div-1 { 
+	background-image: url(../images/osomexicano.png);
 }
